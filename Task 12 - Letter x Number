@@ -1,0 +1,18 @@
+package lettertimesnum;
+import java.util.Scanner;
+
+public class LetterTimesNum {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Please input a letter");
+        String letter = sc.nextLine();
+        System.out.println("Please input a number");
+        int num = sc.nextInt();
+        
+        for (int i = 0; i < num; i++) {
+            System.out.print(letter);
+        }
+    }   
+}
