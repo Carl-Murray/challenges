@@ -1,0 +1,21 @@
+package ch5;
+import java.util.Scanner;
+
+public class Ch5 {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please input your score and I'll calculate a grade.");
+        int score = sc.nextInt();
+        
+        if (score >= 20) {
+            System.out.println("You got an A.");
+        }
+        else if(score >= 10){
+            System.out.println("You got a C.");
+        }
+        else{
+            System.out.println("Sorry, but you failed the test.");
+        }
+    }
+}
