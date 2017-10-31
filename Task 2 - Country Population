@@ -1,0 +1,21 @@
+package countrypopulation;
+import java.util.Scanner;
+
+public class CountryPopulation {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Please input a country:");
+        
+        String name = sc.nextLine();
+        
+        System.out.println("What is the population of "+name+"?");
+        
+        int population = sc.nextInt();
+        
+        System.out.println(name+" has a population of "+population+"!");
+        
+    }
+    
+}
