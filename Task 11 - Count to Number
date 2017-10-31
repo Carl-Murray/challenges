@@ -1,0 +1,15 @@
+package counttonumber;
+import java.util.Scanner;
+
+public class CountToNumber {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please input a stopping point.");
+        int end = sc.nextInt();
+        
+        for (int i = 0; i <= end; i++){
+            System.out.println(i);
+        }
+    }  
+}
