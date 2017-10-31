@@ -1,0 +1,15 @@
+package ch7;
+import java.util.Scanner;
+
+public class Ch7 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("distance (miles) : ");
+        int distance = sc.nextInt();
+        System.out.print("time (hours): ");
+        int time = sc.nextInt();
+        
+        System.out.println("The speed is "+distance/time+" miles per hour.");
+    }   
+}
