@@ -1,0 +1,16 @@
+package ch6;
+import java.util.Scanner;
+
+public class Ch6 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Please give me the width and length of a rectangle and I'll calculate the area.");
+        System.out.print("Length: "); 
+        int length = sc.nextInt();
+        System.out.print("Width: "); 
+        int width = sc.nextInt();
+        
+        System.out.println("The area of your rectangle is "+length*width+".");
+    }    
+}
