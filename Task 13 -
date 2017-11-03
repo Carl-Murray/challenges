@@ -1,0 +1,21 @@
+package addition;
+import java.util.Scanner;
+
+public class addition {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        String stop = "";
+        
+        while(!stop.equals("stop")){
+            System.out.println("Please input two numbers:");
+            int num1 = sc.nextInt();
+            int num2 = sc.nextInt();
+            System.out.println("The total is: "+(num1 + num2));
+        
+            System.out.println("Type \"stop\" if you would like to stop. Otherwise, the program continues.");
+            stop = sc.next();
+            stop = stop.toLowerCase();
+        }
+    }
+}
