@@ -1,0 +1,19 @@
+package ch15;
+import java.util.Scanner;
+
+public class Ch15 {
+    
+    public static void main(String[] args) {
+        System.out.println("Please input a number that will be used to divide all numbers from 1 to 100.");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        for (int i = 1; i <= 100; i++) {
+            if (i % num == 0) {
+                System.out.println(i+" divided by "+num+" = "+i/num);
+            }
+            else{
+                System.out.println(i+" is not divisible by "+num+".");
+            }
+        }
+    }
+}
