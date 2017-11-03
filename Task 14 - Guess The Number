@@ -1,0 +1,37 @@
+package guessnumber;
+import java.util.Scanner;
+import java.util.Random;
+
+public class GuessNumber {
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random randomNum = new Random();
+        int max = 100;
+        int min = 1;
+        int number = min + randomNum.nextInt(max);
+        int incorrect = 0;
+        //System.out.println(number); 
+        //this was for testing
+        System.out.println("I'm thinking of a number between 1 and 100...\nCan you guess what it is?");
+        int guess = 101;
+        
+        while(guess != number){
+            
+            guess = sc.nextInt();
+
+            if (guess > number) {
+                System.out.println("Sorry, "+guess+" is too big!");
+                incorrect += 1;
+            }
+            else if (guess < number){
+                System.out.println("Sorry, "+guess+" is too small!");
+                incorrect += 1;
+            }
+            else{
+                System.out.println("You got it! Well done! The number I was thinking of was "+number+"!");
+                System.out.println("You had "+incorrect+" incorrect guesses!");
+            }
+        }
+    }  
+}
