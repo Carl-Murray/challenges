@@ -1,3 +1,3 @@
 # challenges
 
-Year 12 Programming Challenges
+Year 12 Java Programming Challenges
